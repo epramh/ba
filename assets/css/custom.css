@@ -1,0 +1,167 @@
+
+/********** Template CSS **********/
+:root {
+    --dark-light:rgb(0 0 0 / 50%);
+    --dark-deep:rgb(0 0 0 / 75%);
+    --border-btn: 2em;
+    --box-btn: 0 0.25em 0 var(--secondary);
+    --facebook: blue;
+    --linkedin: dodgerblue;
+    --twitter: deepskyblue;
+    --youtube: ;
+}
+
+/* .navbar a h2.m-0.text-primary i, 
+.container .row .col-sm-10 h5 {
+    color: #b81213 !important;
+} */
+
+.navbar-light .navbar-brand img:hover{
+    animation-name: bounce;
+}
+
+/* Header */
+    /* Page-header */
+    .page-header .container h1.text-white:hover p {
+        animation-name: bounce;
+        color: var(--primary) !important;
+        cursor: pointer;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb li.breadcrumb-item:hover {
+        animation-name: bounce;
+    }
+    .breadcrumb li.breadcrumb-item:hover a {
+        color: var(--primary) !important;
+    }
+    .breadcrumb li.breadcrumb-item.active:hover a {
+        color: var(--primary) !important;
+    }
+    .breadcrumb li.breadcrumb-item.active a {
+        color: var(--secondary) !important;
+    }
+
+/*** Team ***/
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.1);
+}
+
+    /* Team Navbar */
+    .nav-item.dropdown .dropdown-menu {
+        background-color: var(--dark-light);
+        border-radius: var(--border-btn);    
+        margin: 0.2em 0 0 -5em !important;
+        padding: 0 0.4em;
+    }
+    .nav-item.dropdown .dropdown-menu a.dropdown-item:active {
+        box-shadow: none;
+        position: relative;
+        top: 0.25em;
+    }
+    .nav-item.dropdown .dropdown-menu a.dropdown-item:hover {
+        background-color: var(--light);
+        border: 0.1em solid var(--secondary);
+        border-radius: var(--border-btn);
+        color: var(--primary);
+        transform: scale(1.08);
+    }
+    .nav-item.dropdown .dropdown-menu a.dropdown-item {
+        color: var(--light);
+        background-color: var(--primary);
+        border: 0.1em solid var(--primary);
+        border-radius: var(--border-btn);
+        box-shadow: var(--box-btn);
+        display: flex !important;
+        height: 100%;
+        justify-content: center;
+        margin: 0.6em 0;
+        transition: 3.5s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+    }
+    /* Variant */
+    /* .nav-item.dropdown .dropdown-menu a.dropdown-item:hover {
+        background-color: var(--light);
+        border: 0.2em solid var(--primary) !important;
+        border-radius: 2em;
+        color: var(--primary);
+        transform: scale(1.08);
+    }
+    .nav-item.dropdown .dropdown-menu a.dropdown-item {
+        color: var(--light);
+        border: 0.2em solid var(--secondary) !important;
+        border-radius: 2em;
+        display: flex !important;
+        justify-content: center;
+        margin-bottom: 0.4rem;
+        transition: .5s;
+    } */
+
+    /* Team Container */
+    .team.py-5 {
+        background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../../src/img/Index_04.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Margin inter-container*/
+        margin-top: 3rem !important;
+    }
+    .team.py-5 h6.section-title {
+        background-color: transparent !important;
+        /* Show the red line */
+        /* z-index: 1; */ 
+    }
+    
+    /* First Variant */
+    .team.var1 div.team-item:hover {
+        border: 1px solid var(--primary);
+        border-color: var(--secondary) !important;
+        color: var(--primary);  
+        margin-top: -1em;
+        transform: scale(1.06);
+    }
+    .team.var1 div.team-item {
+        background-color: var(--primary);
+        border-color: var(--primary) !important;
+        border-radius: var(--border-btn);
+        box-shadow: var(--box-btn);
+        height: 100%;
+        transition: 3.5s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+    }
+
+    .team.var1 div.team-item .position-relative.overflow-hidden {
+        border-radius: 2em 2em 0 0;
+    }
+    .team.var1 div.team-item a.flex-shrink-0.border-end:active {
+        box-shadow: none;
+        position: relative;
+        top: 0.25em;
+    }
+    .team.var1 div.team-item a.flex-shrink-0.border-end:hover {
+        background-color: var(--light);
+        border-color: var(--secondary) !important;
+        color: var(--primary);
+        transform: scale(0.9);
+    }
+    .team.var1 div.team-item a.flex-shrink-0.border-end {
+        background-color: var(--primary);
+        border-color: var(--primary) !important;
+        border-radius: var(--border-btn);
+        box-shadow: var(--box-btn);
+        height: 100%;
+    }
+
+    /*** Footer ***/
+        /* Social */
+        .footer .btn.btn-social:hover i.fab.fa-facebook-f {
+            color: var(--facebook);
+        }
+        .footer .btn.btn-social:hover i.fab.fa-linkedin-in {
+            color: var(--linkedin);
+        }
+        .footer .btn.btn-social:hover i.fa-twitter {
+            color: var(--twitter);
+        }
